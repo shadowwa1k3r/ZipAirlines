@@ -4,7 +4,7 @@ from math import log10
 class Airplane(models.Model):
     airplane_id = models.IntegerField()
     passenger_count = models.IntegerField()
-    fuel_tank = models.IntegerField(null=True, required=False)
+    fuel_tank = models.IntegerField(null=True, blank=True)
 
     class Meta:
         db_table = 'airplane'
