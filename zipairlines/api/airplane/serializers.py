@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from zipairlines.models.airplane import Airplane
+from zipairlines.models import Airplane
 
 class AirplaneCreateSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,7 +19,7 @@ class AirplaneListDetailSerializer(serializers.ModelSerializer):
         fields = (
             'airplane_id',
             'passenger_count',
-            'fuel_consumption_per_minute'
+            'fuel_consumption_per_minute',
             'flight_time'
         )
 
