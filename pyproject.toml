@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "zipairlines"
+version = "0.1.0"
+description = "ziphr interview test problem"
+authors = ["shadowwa1k3r"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.0.4"
+djangorestframework = "^3.13.1"
+black = "^22.3.0"
+psycopg2-binary = "^2.9.3"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
